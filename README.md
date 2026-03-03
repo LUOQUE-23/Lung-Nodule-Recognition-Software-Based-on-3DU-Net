@@ -43,9 +43,7 @@
 
 ## 核心数学定义与公式
 
-<img width="631" height="113" alt="image" src="https://github.com/user-attachments/assets/e975eff7-f986-4099-8b56-1c38c3d0c0c0" />
-    <img width="590" height="850" alt="image" src="https://github.com/user-attachments/assets/7d369c47-56b4-4fb7-9c77-02e8b87ca0a6" />
-    <img width="586" height="489" alt="image" src="https://github.com/user-attachments/assets/8e63068f-1f70-44a6-8e23-5570438b7fe3" />
+<img width="628" height="116" alt="image" src="https://github.com/user-attachments/assets/8a41b73c-a4c2-4d5d-b9d6-e9a3d30bf6f4" />
 
 
 
@@ -58,13 +56,16 @@
 2. 随机采样背景中心（远离结节）生成负样本
 3. 保存为 `images.npy` 与 `masks.npy`
 <img width="625" height="443" alt="22c8e2ca712f220bf7f7aa126651f09e" src="https://github.com/user-attachments/assets/8cce2f3d-e294-4824-a0e2-da9670bfa66e" />
+<img width="611" height="859" alt="image" src="https://github.com/user-attachments/assets/986a2384-1160-4c24-9e9d-232f388c75ee" />
+<img width="613" height="488" alt="image" src="https://github.com/user-attachments/assets/26e3f941-a185-4d3f-828e-345ce6f014ad" />
 
 ### 2. 3D U-Net 训练流程
 
 - 计算正样本权重
 - 使用混合损失（BCE + Dice）
 - 每个 epoch 在验证集评估 Dice，保存最佳权重
-<img width="351" height="361" alt="49cff4169bf2488b35c4d19130742424" src="https://github.com/user-attachments/assets/d2bc5740-acd7-41e1-9a9d-78610f2f1056" />
+<img width="814" height="449" alt="image" src="https://github.com/user-attachments/assets/db259eb2-8e5d-408b-89db-347da473d6c7" />
+
 
 ### 3. 自适应阈值 + 不确定性抑制推理流程
 
@@ -72,7 +73,8 @@
 2. 对待推理样本计算概率图 + 体素级不确定性
 3. 抑制高不确定区域概率
 4. 使用 $t^*$ 二值化得到最终掩码并可视化
-<img width="471" height="169" alt="77f08beeca85a502968f0ce577d2f02e" src="https://github.com/user-attachments/assets/e0c373f8-6113-4eff-9fac-ddfda8595365" />
+<img width="811" height="193" alt="image" src="https://github.com/user-attachments/assets/04512c0c-e347-4b52-9155-701b3f37893c" />
+
 
 ## 本地推理平台使用说明
 ### 主程序文件
